@@ -1,0 +1,31 @@
+{
+  "name": "careerpilot-ai-backend",
+  "version": "1.0.0",
+  "description": "Backend API for CareerPilot AI, a SaaS app that optimizes LinkedIn profiles with AI.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "linkedin",
+    "career",
+    "ai",
+    "saas",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
