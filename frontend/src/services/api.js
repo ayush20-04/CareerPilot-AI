@@ -18,35 +18,35 @@ const request = async (path, options = {}) => {
   return data;
 };
 export const analyzeProfile = (payload) => {
-  return request("/ai/analyze-profile", {
+  return request("/api/ai/analyze-profile", {
     method: "POST",
     body: JSON.stringify(payload)
   });
 };
 
 export const optimizeHeadline = (payload) => {
-  return request("/ai/optimize-headline", {
+  return request("/api/ai/optimize-headline", {
     method: "POST",
     body: JSON.stringify(payload)
   });
 };
 
 export const generateAbout = (payload) => {
-  return request("/ai/generate-about", {
+  return request("/api/ai/generate-about", {
     method: "POST",
     body: JSON.stringify(payload)
   });
 };
 
 export const suggestSkills = (payload) => {
-  return request("/ai/suggest-skills", {
+  return request("/api/ai/suggest-skills", {
     method: "POST",
     body: JSON.stringify(payload)
   });
 };
 
 export const generatePost = (payload) => {
-  return request("/ai/generate-post", {
+  return request("/api/ai/generate-post", {
     method: "POST",
     body: JSON.stringify(payload)
   });
