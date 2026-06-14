@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const request = async (path, options = {}) => {
   const response = await fetch(`${API_URL}${path}`, {
@@ -53,11 +53,11 @@ export const generatePost = (payload) => {
 };
 
 export const getHistory = () => {
-  return request("/history");
+  return request("/api/history");
 };
 
 export const deleteHistoryItem = (id) => {
-  return request(`/history/${id}`, {
+  return request(`/api/history/${id}`, {
     method: "DELETE"
   });
 };
